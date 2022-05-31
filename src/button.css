@@ -5,10 +5,11 @@
 	font-size: 1em;
 	font-family: 'soleil';
 	padding: 0.5em 1em;
+	transition: transform 3s;
 }
 
 .button:hover:not(:disabled) {
-	transform: translateY(1px);
+	transform: translateY(-1px);
 }
 
 .button:disabled {
