@@ -36,11 +36,11 @@
 	"size-limit": [
 		{
 			"path": "dist/trendsales-components-fe.cjs.production.min.js",
-			"limit": "10 KB"
+			"limit": "1 KB"
 		},
 		{
 			"path": "dist/trendsales-components-fe.esm.js",
-			"limit": "10 KB"
+			"limit": "1 KB"
 		}
 	],
 	"devDependencies": {
