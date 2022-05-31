@@ -1,5 +1,5 @@
 {
-	"version": "0.1.0",
+	"version": "0.0.1",
 	"license": "MIT",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
@@ -30,6 +30,12 @@
 			"pre-commit": "tsdx lint"
 		}
 	},
+	"jest": {
+		"moduleNameMapper": {
+			"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+			"\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+		}
+	},
 	"name": "trendsales-components-fe",
 	"author": "litvinaviciusm@gmail.com",
 	"module": "dist/trendsales-components-fe.esm.js",
@@ -45,6 +51,8 @@
 	],
 	"devDependencies": {
 		"@babel/core": "^7.18.2",
+		"@babel/preset-env": "^7.18.2",
+		"@babel/preset-react": "^7.17.12",
 		"@size-limit/preset-small-lib": "^7.0.8",
 		"@storybook/addon-essentials": "^6.5.6",
 		"@storybook/addon-info": "^5.3.21",
@@ -55,6 +63,7 @@
 		"@storybook/manager-webpack5": "^6.5.6",
 		"@storybook/react": "^6.5.6",
 		"@storybook/testing-library": "0.0.11",
+		"@testing-library/react": "^13.3.0",
 		"@types/react": "^18.0.9",
 		"@types/react-dom": "^18.0.5",
 		"babel-loader": "^8.2.5",
