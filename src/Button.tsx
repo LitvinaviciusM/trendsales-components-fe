@@ -13,7 +13,7 @@ export const Button = ({
 	...props
 }: Props) => {
 	return (
-		<button className={`tk-soleil button ${variant} ${className}`} {...props}>
+		<button className={`button ${variant} ${className}`} {...props}>
 			{children}
 		</button>
 	);
