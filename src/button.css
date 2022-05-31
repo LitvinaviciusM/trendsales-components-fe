@@ -6,6 +6,10 @@
 	padding: 0.5em 1em;
 }
 
+.button:hover:not(:disabled) {
+	transform: translateY(1px);
+}
+
 .button:disabled {
 	cursor: default;
 }
@@ -15,7 +19,7 @@
 }
 
 .button.primary {
-	color: var(--c-pitch-black);
+	color: var(--c-white);
 	background-color: var(--c-trendsales-yellow);
 }
 
