@@ -11,7 +11,11 @@ const meta: Meta = {
 	// argTypes: {
 	//   onClick: action('clicked'),
 	// }
+	parameters: {
+		componentSubtitle: 'The mosst beautiful button in the world',
+	},
 };
+
 export default meta;
 
 const Template: Story<Props> = (args) => <Button {...args} />;
@@ -27,5 +31,4 @@ Default.args = {
 Default.play = async ({ args, canvasElement }) => {
 	const canvas = within(canvasElement);
 	await userEvent.click(canvas.getByRole('button'));
-	// await expect(args.onClick).toHaveBeenCalled();
 };
