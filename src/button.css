@@ -16,11 +16,11 @@
 
 .button.primary {
 	color: var(--c-white);
-	background-color: var(--c-trendsales-yellow-2);
+	background-color: var(--c-trendsales-yellow);
 }
 
 .button.primary:hover {
-	background-color: var(--c-trendsales-yellow);
+	background-color: var(--c-trendsales-yellow-2);
 }
 
 .button.primary:disabled {
