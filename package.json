@@ -2,17 +2,20 @@
 	"version": "0.0.1",
 	"license": "MIT",
 	"main": "dist/index.js",
+	"name": "trendsales-components-fe",
+	"author": "litvinaviciusm@gmail.com",
+	"module": "dist/trendsales-components-fe.esm.js",
 	"typings": "dist/index.d.ts",
+	"engines": {
+		"node": ">=10"
+	},
 	"files": [
 		"dist",
 		"src"
 	],
-	"engines": {
-		"node": ">=10"
-	},
 	"scripts": {
 		"start": "tsdx watch",
-		"build": "tsdx build",
+		"build": "tsdx build --format esm --tsconfig tsconfig.json",
 		"test": "tsdx test --passWithNoTests",
 		"lint": "tsdx lint",
 		"prepare": "tsdx build",
@@ -21,9 +24,6 @@
 		"analyze": "size-limit --why",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook"
-	},
-	"peerDependencies": {
-		"react": ">=16"
 	},
 	"husky": {
 		"hooks": {
@@ -36,9 +36,6 @@
 			"\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
 		}
 	},
-	"name": "trendsales-components-fe",
-	"author": "litvinaviciusm@gmail.com",
-	"module": "dist/trendsales-components-fe.esm.js",
 	"size-limit": [
 		{
 			"path": "dist/trendsales-components-fe.cjs.production.min.js",
@@ -49,6 +46,9 @@
 			"limit": "1 KB"
 		}
 	],
+	"peerDependencies": {
+		"react": ">=16"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.18.2",
 		"@babel/preset-env": "^7.18.2",
