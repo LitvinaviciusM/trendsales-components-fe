@@ -39,11 +39,11 @@
 	"size-limit": [
 		{
 			"path": "dist/trendsales-components-fe.cjs.production.min.js",
-			"limit": "1 KB"
+			"limit": "10 KB"
 		},
 		{
 			"path": "dist/trendsales-components-fe.esm.js",
-			"limit": "1 KB"
+			"limit": "10 KB"
 		}
 	],
 	"peerDependencies": {
