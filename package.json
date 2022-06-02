@@ -67,6 +67,7 @@
 		"@testing-library/react": "^13.3.0",
 		"@types/react": "^18.0.9",
 		"@types/react-dom": "^18.0.5",
+		"auto": "^10.37.1",
 		"babel-loader": "^8.2.5",
 		"chromatic": "^6.5.4",
 		"husky": "^8.0.1",
