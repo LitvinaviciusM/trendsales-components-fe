@@ -21,7 +21,7 @@
 }
 
 .button.primary {
-	color: var(--c-white);
+	color: var(--c-pitch-black);
 	background-color: var(--c-trendsales-yellow);
 }
 

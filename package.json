@@ -80,5 +80,6 @@
 		"tslib": "^2.4.0",
 		"typescript": "^4.7.2"
 	},
-	"dependencies": {}
+	"dependencies": {},
+	"repository": "git@github.com:LitvinaviciusM/trendsales-components-fe.git"
 }
